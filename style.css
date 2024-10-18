@@ -1,0 +1,486 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  padding-top: 0;
+  background: url("Img/lilianaHouse.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.HandymanHeader {
+  display: flex;
+  align-items: center;
+  background-color: #7ebfb3d4;
+  color: #ebf2f1;
+  padding: 15px;
+  margin-top: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures it stays on top */
+  height: 5%;
+}
+
+@media (min-width: 768px) {
+  .HandymanHeader p {
+    font-size: 30px; /* 2 columnas */
+  }
+}
+
+@media (min-width: 1024px) {
+  .HandymanHeader p {
+    font-size: 20px; /* 3 columnas */
+  }
+}
+
+@media (max-width: 767px) {
+  .HandymanHeader p {
+    font-size: 28px; /* 1 columna */
+  }
+}
+
+.eslogan p em {
+  color: white;
+}
+
+.solid-header {
+  background-color: #7ebfb3d4; /* El color sólido que quieras */
+}
+
+.content {
+  height: 2000px; /* Simulate a long page */
+}
+
+.estructura1 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.eslogan {
+  font-size: 50px;
+  font-family: "Protest strike", sans-serif;
+  font-weight: 100;
+  padding-bottom: 0px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  background: #ebf2f1;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  height: 35dvw;
+  width: 50dvw;
+}
+
+@media (min-width: 768px) {
+  .eslogan {
+    font-size: 25px;
+    width: 60dvw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .eslogan {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .eslogan {
+    font-size: 28px;
+    width: 80dvw;
+  }
+}
+
+.eslogan p em {
+  color: white;
+}
+
+.estructura1::before {
+  content: "";
+  position: absolute; /* Fija la posición del gradiente */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #7ebfb32b;
+  pointer-events: none; /* Asegura que no interfiera con las interacciones */
+  z-index: -1; /* Asegura que esté por encima de la imagen de fondo */
+}
+
+.name {
+  flex-grow: 1;
+  font-family: "Protest Strike", sans-serif;
+  font-size: 2em;
+  font-weight: 200;
+}
+
+.Contact {
+  font-family: "protest Strike", sans-serif;
+  word-spacing: 10px;
+}
+
+.Contact a {
+  color: #ffdd57;
+  text-decoration: none;
+}
+
+.Contact a:hover {
+  text-decoration: underline;
+}
+
+.bordes {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: #ebf2f1;
+  padding-top: 30px;
+  width: 100%;
+}
+.contenido1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.texto1 {
+  flex: 1;
+  padding: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-weight: 600;
+  font-family: "Manrope", sans-serif;
+  line-height: 1;
+  text-align: center;
+  font-style: italic;
+  color: #194759;
+  font-size: 26px;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .texto1 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .texto1 {
+    font-size: 16px;
+  }
+}
+
+.nextSection {
+  font-size: 36px;
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 100;
+  padding-bottom: 15px;
+  color: #222222;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  background: #194759 /*linear-gradient(45deg, #4f4e4a, #af394c) */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Texto degradado */
+  background-clip: text;
+  text-align: center;
+  align-items: center;
+}
+
+.contenedorOurOffer {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.contenedorOurOffer p {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 20px auto;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  color: #194759;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contenedorOurOffer p {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contenedorOurOffer:hover::before {
+  width: 50px;
+}
+
+h3 {
+  font-size: 40px;
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 100;
+  padding-bottom: 0px;
+  color: #222222;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  background: #194759 /*linear-gradient(45deg, #4f4e4a, #af394c) */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Texto degradado */
+  background-clip: text;
+  text-align: center;
+  align-items: center;
+}
+
+section {
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  margin: 20px;
+}
+
+@media (min-width: 768px) {
+  section {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  }
+}
+
+@media (max-width: 767px) {
+  section {
+    grid-template-columns: 1fr; /* 1 columna */
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+  height: 30%;
+  width: 30%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.item h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #194759;
+  font-family: "protest strike", sans-serif;
+}
+
+.inside img {
+  align-items: center;
+}
+
+.inside img {
+  align-items: center;
+}
+
+.moreChores p {
+  font-size: 40px;
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  padding-top: 15px;
+  color: #222222;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  background: #194759 /*linear-gradient(45deg, #4f4e4a, #af394c) */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Texto degradado */
+  background-clip: text;
+  text-align: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: #194759;
+  text-align: center;
+  line-height: 1;
+}
+ul li::before {
+  content: ""; /* Añade un símbolo antes de cada elemento */
+  color: #333;
+  margin-right: 10px;
+}
+
+ul li {
+  padding-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+
+.modal-button {
+  background-color: #194759;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  font-family: "protest strike", sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.modal-button {
+  background-color: #7ebfb3d4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 26px;
+}
+
+.modal-button:hover {
+  background-color: #69a79a;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Rubik", sans-serif;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #7ebfb3d4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 0px;
+  border-radius: 5px;
+  font-size: 30px;
+  height: 100px;
+  width: 300px;
+}
+
+button:hover {
+  background-color: #69a79a;
+}
+
+#despedida {
+  font-family: "rubik", sans-serif;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+footer {
+  padding-top: 15px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+footer p {
+  color: white;
+}
