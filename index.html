@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>TopNochHandymanService</title>
+  </head>
+  <body>
+    <header class="HandymanHeader">
+      <img src="Img/Handyman.png" alt="Handyman" height="50" width="50" />
+      <h1 class="name">Top-NochHandyman</h1>
+      <p class="Contact"><a href="#">416-984-2932</a></p>
+    </header>
+
+    <div class="estructura1">
+      <p class="eslogan">
+        <em>Professional Handyman Services for Your Needs.</em>
+      </p>
+    </div>
+
+    <div class="bordes">
+      <div class="contenido1">
+        <div class="texto1">
+          <p>
+            Top-Noch Handyman Services primarily provides Handyman and
+            Contracting Services to residential properties with more than 10
+            years of experience servicing the GTA. Top-Noch Handyman Services is
+            your partner for full-service solutions for all your home projects.
+          </p>
+        </div>
+      </div>
+      <div class="contenido1">
+        <div class="texto1">
+          <p>
+            At Top-Noch Handyman Services, we are not just committed to
+            satisfying our customers, we aim to exceed their expectations. We
+            take great pride in our superior craftsmanship, a testament to our
+            dedication to delivering results that you won't find anywhere else.
+          </p>
+        </div>
+      </div>
+      <h2 class="nextSection">Our Professional Handyman Services</h2>
+
+      <div class="contenedorOurOffer">
+        <p>
+          Most contractors won’t take on small projects. With Top-Noch Handyman
+          Services, you just need to tell us what you need, and your
+          expectations, and services can be booked at your convenience.
+        </p>
+      </div>
+      <h3 class="Section3">Our Services Include:</h3>
+      <section class="outside">
+        <div class="item">
+          <img id="Assembly" src="Img/ensamble.svg" alt="" />
+          <h4>Assembly</h4>
+          <ul>
+            <li>
+              All types of Furniture Assembly ( Ikea, Ashley, Home Depot,
+              Bricks, Wayfair, Walmart, Etc.).
+            </li>
+          </ul>
+        </div>
+        <div class="item">
+          <img src="Img/mounting.svg" alt="" />
+          <h4>Mounting</h4>
+          <ul>
+            <li>TV/LED Mountings.</li>
+            <li>Blinds Installations.</li>
+            <li>Pictures/Mirror Hangings.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <img src="Img/repairs.svg" alt="" />
+          <h4>Repairs</h4>
+          <ul>
+            <li>Minor Doors and Window Repairs.</li>
+            <li>Drywall repair.</li>
+            <li>Door Handles/Door Locks repairs and replacement.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <img src="Img/electrical.svg" alt="" />
+          <h4>Electrical</h4>
+          <ul>
+            <li>Outdoor Lamps Installation.</li>
+            <li>Inside and outside light fixtures replacement.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <img src="Img/insta.svg" alt="" />
+          <h4>Installation</h4>
+          <ul>
+            <li>Appliance Installation.</li>
+            <li>Kitchen Cabinets Assembly and Installation.</li>
+            <li>Minor Doors and Window Repairs.</li>
+            <li>Bathroom Vanities Assembly and Installation.</li>
+            <li>Bathroom hardware installation.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <img src="Img/interior.svg" alt="" />
+          <h4>Interior</h4>
+          <ul>
+            <li>Interior Painting.</li>
+            <li>Cleaning.</li>
+          </ul>
+        </div>
+      </section>
+      <div class="moreChores">
+        <p>And many more chores!!!</p>
+      </div>
+      <div class="button-container">
+        <button id="openModal" class="modal-button">
+          Request a Free Quote Today
+        </button>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Request a Free Quote Today</h2>
+          <form>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required />
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required />
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required />
+            <label for="emailAddress">Email Address:</label>
+            <input
+              type="email"
+              id="emailAddress"
+              name="emailAddress"
+              required
+            />
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required />
+            <label for="street">Street:</label>
+            <input type="text" id="street" name="street" required />
+            <label for="postalCode">Postal Code:</label>
+            <input type="text" id="postalCode" name="postalCode" required />
+            <label for="serviceRequired">Service Required:</label>
+            <select id="serviceRequired" name="serviceRequired">
+              <option value="homeImprovement">Assembly</option>
+              <option value="bathroom">Mounting</option>
+              <option value="outdoor">Repair</option>
+              <option value="homeImprovement">Electrical</option>
+              <option value="bathroom">Mounting</option>
+              <option value="outdoor">Repair</option>
+            </select>
+            <label for="additionalNotes">Additional Notes:</label>
+            <textarea
+              id="additionalNotes"
+              name="additionalNotes"
+              rows="4"
+            ></textarea>
+            <button type="submit">Submit</button>
+          </form>
+          <p>
+            Email:
+            <a href="mailto:sales@top-nochhandyman.com"
+              >sales@top-nochhandyman.com</a
+            >
+          </p>
+          <p>Cell Number: <a href="tel:416-984-2932">416-984-2932</a></p>
+        </div>
+      </div>
+      <p id="despedida">
+        Contact us directly for a FREE writing guarantee estimation of your
+        project. Top-Noch Handyman Services also offers free site inspections to
+        ensure that the quotes we provide you are guaranteed without any
+        discrepancies at the end of the project.
+      </p>
+    </div>
+    <footer>
+      <p>
+        Top-Noch Handyman Services with more than 10 years of experience,
+        committed to satisfy our customers. Your trusted home repair partner.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
